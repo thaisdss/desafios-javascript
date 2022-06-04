@@ -107,6 +107,15 @@ footer{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
 }
 
+footer a{
+    text-decoration: none;
+    color: var(--cor05);
+}
+
+footer a:hover{
+    color: var(--cor04)
+}
+
 #res{
     background-color: var(--cor05);
     color: white;
