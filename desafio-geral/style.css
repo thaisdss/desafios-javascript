@@ -76,7 +76,7 @@ section p{
 #limpar{
     position: relative;
     top: 4px;
-    left: 42%;
+    left: 41%;
     background-color: var(--cor02);
     color: var(--cor01);
     border-radius: 4px;
