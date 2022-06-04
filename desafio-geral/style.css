@@ -1,0 +1,123 @@
+@charset 'UTF-8';
+
+:root{
+    --cor01: #AAE691;
+    --cor02: #3c6d2a;
+    --cor03: #E692E0;
+    --cor04: #FFBAFA;
+    --cor05: #995194;
+
+    --font-padrao: Arial, Helvetica, sans-serif;
+}
+
+*{
+    text-align: center;
+    margin: 0px;
+}
+
+body{
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02));
+    font-family: var(--font-padrao);
+}
+
+header{
+    background-color: white;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
+    min-height: 150px;
+    margin: 0px 0px 40px 0px auto;
+}
+
+header h1{
+    color: var(--cor05);
+    font-size: 2.2em;
+    margin: 20px 0px 20px 0px;
+}
+
+header p{
+    font-size: 1.2em;
+    margin: 0px 5px 0px 5px;
+}
+
+main{
+    background-color: white;
+    border-radius: 12px 0px;
+    padding: 5px;
+    margin: 30px auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281);
+    min-width: 400px;
+    max-width: 800px;
+}
+
+section{
+    background-color: var(--cor04);
+    padding: 3px;
+    margin: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.281);
+    font-size: 1.2em;
+}
+
+section h2{
+    color: var(--cor02);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
+    font-size: 1.6em;
+    margin: 10px 0px;
+}
+
+section p{
+    margin: 15px 0px;
+}
+
+.button{
+    background-color: var(--cor05);
+    color: white;
+    border-color: white;
+    padding: 4px;
+    border-radius: 3px;
+    font-size: 1em;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.281);
+}
+
+footer{
+    background-color: white;
+    color: var(--cor05);
+    font-weight: bold;
+    font-size: 1em;
+    margin: 20px 0px 0px 0px;
+    padding: 3px;
+}
+
+#res{
+    background-color: var(--cor05);
+    color: white;
+    margin: 10px -3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.281);
+    padding: 3px;
+}
+
+#res2{
+    background-color: var(--cor05);
+    color: white;
+    margin: 10px -3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.281);
+    padding: 3px;
+}
+
+#aprovado{
+    color: green;
+    font-weight: bold;
+    background-color: var(--cor01);
+}
+
+#recuperacao{
+    color: #bd7201;
+    background-color: #f8cb87;
+    font-weight: bold;
+}
+
+#reprovado{
+    color: red;
+    background-color: #faa5a5;
+    font-weight: bold;
+}

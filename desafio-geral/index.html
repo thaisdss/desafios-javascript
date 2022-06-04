@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios Gerais - JavaScript Básico</title>
+    <link rel="shortcut icon" href="icones/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Resolvendo diferentes Desafios com JavaScript</h1>
+        <p>Olá Mundo! Esta página tem o objetivo de testar meus conhecimentos básicos de JavaScript, portanto nela você verá diferentes desafios e poderá testa-los para ver se eles estão funcionando corretamente.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Desafio Ano Bissexto</h2>
+            <input type="number" name="ano" id="ano">
+            <input type="button" value="Verificar" onclick="verificarAno()" class="button">
+            <p id="res"></p>
+        </section>
+
+        <section>
+            <h2>Desafio situação do aluno</h2>
+            <p><strong>Insira o nome do aluno(a):</strong> <input type="text" name="nome" id="nome"></p>
+            <p><strong>Insira a nota do 1º Trimestre dele(a):</strong> <input type="number" name="nota1" id="nota1"></p>
+            <p><strong>Insira a nota do 2º Trimestre dele(a):</strong> <input type="number" name="nota2" id="nota2"></p>
+            <p><strong>Insira a nota do 3º Trimestre dele(a):</strong> <input type="number" name="nota3" id="nota3"></p>
+            <p><input type="button" value="Verificar Situação" onclick="verificarSituacao()" class="button"></p>
+            <div id="res2"></div>
+        </section>
+    </main>
+
+    <footer>Criado por Thaís Silva - estudante de programação</footer>
+
+    <script>
+        function verificarAno(){
+            let anoinput = document.getElementById('ano');
+            let ano = Number(anoinput.value);
+            let res = document.getElementById('res')
+
+            if(ano == 0){
+                alert('É necessário informar um ano para calcular se ele é bissexto ou não!')
+            }else{
+                let calculo = ano%4;
+
+                if(calculo == 0){
+                    res.innerHTML = `O ano ${ano} é um ano Bissexto!`
+                }else{
+                    res.innerHTML = `O ano ${ano} não é um ano Bissexto!`
+            }
+        }
+    }
+
+    function verificarSituacao(){
+        let nome = document.getElementById('nome')
+        let nota1 = parseFloat(document.getElementById('nota1').value)
+        let nota2 = parseFloat(document.getElementById('nota2').value)
+        let nota3 = parseFloat(document.getElementById('nota3').value)
+        let res2 = document.getElementById('res2')
+
+        let media = (nota1+nota2+nota3)/3
+
+        res2.innerHTML = `<p><strong>Analisando a situação de ${nome.value}</strong></p>`
+        res2.innerHTML += `<p>Com as notas ${nota1}, ${nota2} e ${nota3} a média é ${media}</p>`
+
+        if(media > 6){
+            res2.innerHTML += "<p>Com média acima de 6.0 o aluno está <spam id='aprovado'>APROVADO</spam><p>"
+        }
+        
+        if(media >= 3 && media <= 6){
+            res2.innerHTML += "<p>Com média entre 3.0 e 6.0 o aluno está em <spam id='recuperacao'>RECUPERAÇÃO</spam><p>"
+            }
+            
+        if(media < 3.0){
+            res2.innerHTML += "<p>Com média abaixo de 3.0 o aluno está <spam id='reprovado'>REPROVADO</spam><p>"
+    }
+    }
+    </script>
+</body>
+</html>
