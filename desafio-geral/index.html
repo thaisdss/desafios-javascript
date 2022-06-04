@@ -17,18 +17,19 @@
     <main>
         <section>
             <h2>Desafio Ano Bissexto</h2>
+            <button id="limpar" onclick="limpar()">LIMPAR</button>
             <p>Insira uma no no campo abaixo e descubra se ele é um ano bissexto:</p>
-            <input type="number" name="ano" id="ano">
+            <input type="number" name="ano" id="ano" class="input">
             <input type="button" value="Verificar" onclick="verificarAno()" class="button">
             <p id="res"></p>
         </section>
 
         <section>
             <h2>Desafio situação do aluno</h2>
-            <p><strong>Insira o nome do aluno(a):</strong> <input type="text" name="nome" id="nome"></p>
-            <p><strong>Insira a nota do 1º Trimestre dele(a):</strong> <input type="number" name="nota1" id="nota1"></p>
-            <p><strong>Insira a nota do 2º Trimestre dele(a):</strong> <input type="number" name="nota2" id="nota2"></p>
-            <p><strong>Insira a nota do 3º Trimestre dele(a):</strong> <input type="number" name="nota3" id="nota3"></p>
+            <p><strong>Insira o nome do aluno(a):</strong> <input type="text" name="nome" id="nome" class="input"></p>
+            <p><strong>Insira a nota do 1º Trimestre dele(a):</strong> <input type="number" name="nota1" id="nota1" class="input"></p>
+            <p><strong>Insira a nota do 2º Trimestre dele(a):</strong> <input type="number" name="nota2" id="nota2" class="input"></p>
+            <p><strong>Insira a nota do 3º Trimestre dele(a):</strong> <input type="number" name="nota3" id="nota3" class="input"></p>
             <p><input type="button" value="Verificar Situação" onclick="verificarSituacao()" class="button"></p>
             <div id="res2"></div>
         </section>

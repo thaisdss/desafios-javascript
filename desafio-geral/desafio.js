@@ -25,6 +25,7 @@ let res2 = document.getElementById('res2')
 
 let media = (nota1+nota2+nota3)/3
 
+
 res2.innerHTML = `<p><strong>Analisando a situação de ${nome.value}</strong></p>`
 res2.innerHTML += `<p>Com as notas ${nota1}, ${nota2} e ${nota3} a média é ${media}</p>`
 
@@ -38,5 +39,15 @@ if(media >= 3 && media <= 6){
     
 if(media < 3.0){
     res2.innerHTML += "<p>Com média abaixo de 3.0 o aluno está <spam id='reprovado'>REPROVADO</spam><p>"
-}
+}}
+
+function limpar(){
+    let res = document.getElementById('res').innerHTML = ""
+    let res2 = document.getElementById('res2').innerHTML = ""
+    let input = document.getElementsByClassName('input')
+
+    for(i=0; input[i]; i++){
+        input[i].value = ""
+    }
+
 }
