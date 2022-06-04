@@ -42,9 +42,12 @@ if(media < 3.0){
 }}
 
 function limpar(){
-    let res = document.getElementById('res').innerHTML = ""
-    let res2 = document.getElementById('res2').innerHTML = ""
+    let res = document.getElementsByClassName('res')
     let input = document.getElementsByClassName('input')
+
+    for(i=0; res[i]; i++){
+        res[i].innerHTML = ""
+    }
 
     for(i=0; input[i]; i++){
         input[i].value = ""
