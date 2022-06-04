@@ -46,7 +46,7 @@ main{
     padding: 5px;
     margin: 30px auto;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281);
-    min-width: 400px;
+    min-width: 300px;
     max-width: 800px;
 }
 
@@ -70,9 +70,9 @@ section p{
 }
 
 #limpar{
-    position: absolute;
-    top: 33%;
-    right: 22%;
+    position: relative;
+    bottom: 40px;
+    left: 40%;
     background-color: var(--cor02);
     color: var(--cor01);
     border-radius: 4px;

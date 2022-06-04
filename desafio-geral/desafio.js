@@ -23,6 +23,11 @@ let nota2 = parseFloat(document.getElementById('nota2').value)
 let nota3 = parseFloat(document.getElementById('nota3').value)
 let res2 = document.getElementById('res2')
 
+if(nome.value.length < 3){
+    alert('Insira um nome válido')
+    nome.value = ""
+    nome.focus()
+}else{
 let media = (nota1+nota2+nota3)/3
 
 
@@ -40,6 +45,7 @@ if(media >= 3 && media <= 6){
 if(media < 3.0){
     res2.innerHTML += "<p>Com média abaixo de 3.0 o aluno está <spam id='reprovado'>REPROVADO</spam><p>"
 }}
+}
 
 function limpar(){
     let res = document.getElementsByClassName('res')
