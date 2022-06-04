@@ -70,18 +70,18 @@ section h2{
 }
 
 section p{
-    margin: 15px 0px;
+    margin: 15px;
 }
 
 #limpar{
     position: relative;
-    bottom: 40px;
-    left: 40%;
+    top: 4px;
+    left: 42%;
     background-color: var(--cor02);
     color: var(--cor01);
     border-radius: 4px;
     border-color: var(--cor01);
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: bold;
 }
 
